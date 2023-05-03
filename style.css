@@ -1,0 +1,48 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(Img/faf455819ea7f133aeee5c40807463d6.jpg);
+    background-size: cover;
+    cursor: url(Img/pngwing.com.png), default;
+   }
+
+   .count_hit{
+    font-size: 30px;
+    color: red;
+    -webkit-text-stroke: 1.5px black;
+   }
+
+   .table_down {
+    width: 75%;
+    border-bottom: 10px solid rgb(66, 66, 66);
+    display: flex;
+    justify-content: space-between;
+    height: 10px;
+    align-items:flex-start;
+   }
+
+   .table_up {
+    width: 75%;
+    border-bottom: 10px solid rgb(66, 66, 66);
+    display: flex;
+    justify-content: space-between;
+    height: 10px;
+    align-items:flex-end;
+   }
+
+
+   .dartboard_up {
+    width: 70px;
+    height: 125px;
+    background: url(Img/947262ba3c975735da2947b95072c23f.jpg) center bottom/100px auto no-repeat;
+    padding: 15px 15px 0;
+    transform-origin: 50% bottom;
+    transition:.5s;
+   }
+   
+   .hit {
+    transform: rotateX(80deg);
+   }
