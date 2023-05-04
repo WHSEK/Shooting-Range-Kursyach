@@ -10,18 +10,15 @@ body {
    }
 
    .count_hit{
+    padding-left: 600px;
     font-size: 30px;
-    color: red;
+    color: rgb(255, 0, 0);
     -webkit-text-stroke: 1.5px black;
    }
 
-   .table_down {
-    width: 75%;
-    border-bottom: 10px solid rgb(66, 66, 66);
-    display: flex;
-    justify-content: space-between;
-    height: 10px;
-    align-items:flex-start;
+   strong{
+    margin-left: 10px;
+    margin-right: 10px;
    }
 
    .table_up {

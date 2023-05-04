@@ -16,7 +16,7 @@ function playShot(e) {
   counter++;
   count.textContent = counter;
   el.classList.add('hit');
-  if(counter == 8) {
+  if(counter == 9) {
    setTimeout(replay,800);
    AReload.stop();
    AReload.play();
