@@ -10,18 +10,18 @@ body {
    }
 
    .count_hit{
-    padding-left: 600px;
-    font-size: 30px;
+    font-size: 35px;
+    padding-left: 450px;
     color: rgb(255, 0, 0);
-    -webkit-text-stroke: 1.5px black;
+    -webkit-text-stroke: 1.5px rgb(0, 0, 0);
+    -webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
    }
 
-   strong{
-    margin-left: 10px;
-    margin-right: 10px;
-   }
-
-   .table_up {
+   .table {
     width: 75%;
     border-bottom: 10px solid rgb(66, 66, 66);
     display: flex;
@@ -40,6 +40,6 @@ body {
     transition:.5s;
    }
    
-   .hit {
+   .dartboard_down {
     transform: rotateX(80deg);
    }

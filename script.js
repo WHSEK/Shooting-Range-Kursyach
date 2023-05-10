@@ -3,6 +3,7 @@ let shot = document.querySelector('.shot'),
     count = document.querySelector('.count_hit strong'),
     AReload = document.querySelector('.Active_Reload'),
     counter = 0;
+    AllCounter = 0;
 
 document.body.addEventListener('click', playShot);
 
@@ -14,10 +15,11 @@ function playShot(e) {
   hit.stop();
   hit.play();
   counter++;
-  count.textContent = counter;
-  el.classList.add('hit');
+  AllCounter++;
+  count.textContent = AllCounter;
+  el.classList.add('dartboard_down');
   if(counter == 9) {
-   setTimeout(replay,800);
+   setTimeout(replay,3000);
    AReload.stop();
    AReload.play();
   }
@@ -28,12 +30,12 @@ function playShot(e) {
 }
 
 function replay() {
- let died = document.querySelectorAll('.dartboard_up');
- died.forEach(function(item){
-  item.classList.remove('hit');
+ let Hitted = document.querySelectorAll('.dartboard_up');
+ Hitted.forEach(function(item){
+  item.classList.remove('dartboard_down');
  });
  counter = 0;
- count.textContent = counter;
+ count.textContent = AllCounter;
 }
 
 
