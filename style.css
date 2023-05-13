@@ -21,15 +21,31 @@ body {
 	user-select: none;
    }
 
+   .AddButton{
+    position: absolute;
+    right: 100px;
+    top: 400px;
+    border-radius: 20px;
+    background-color: khaki;
+   }
+
+   .RemoveButton{
+    position: absolute;
+    right: 100px;
+    top: 430px;
+    border-radius: 20px;
+    background-color: khaki;
+   }
+
+
    .table {
-    width: 75%;
+    width: 100%;
     border-bottom: 10px solid rgb(66, 66, 66);
     display: flex;
     justify-content: space-between;
     height: 10px;
     align-items:flex-end;
    }
-
 
    .dartboard_up {
     width: 70px;

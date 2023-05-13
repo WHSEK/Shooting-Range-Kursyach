@@ -1,7 +1,6 @@
 let shot = document.querySelector('.shot'),
     hit = document.querySelector('.hit'),
     count = document.querySelector('.count_hit strong'),
-    AReload = document.querySelector('.Active_Reload'),
     counter = 0;
     AllCounter = 0;
 
@@ -18,10 +17,8 @@ function playShot(e) {
   AllCounter++;
   count.textContent = AllCounter;
   el.classList.add('dartboard_down');
-  if(counter == 9) {
-   setTimeout(replay,3000);
-   AReload.stop();
-   AReload.play();
+  if(counter == 1) {
+   setTimeout(replay, 3500);
   }
  } else {
   shot.stop();
@@ -37,6 +34,26 @@ function replay() {
  counter = 0;
  count.textContent = AllCounter;
 }
+
+function addDartboardToTable() {
+    const table = document.querySelector('.table');
+  
+if (table.children.length < 18) {
+    const dartboard = document.createElement('div');
+    dartboard.classList.add('dartboard_up');
+    table.appendChild(dartboard);
+    }
+}
+
+function removeDartboardFromTable() {
+const table = document.querySelector('.table');
+    
+if (table.children.length > 3) {
+    const dartboard = table.lastChild;
+    table.removeChild(dartboard);
+    }
+}
+
 
 
 HTMLAudioElement.prototype.stop = function(){
